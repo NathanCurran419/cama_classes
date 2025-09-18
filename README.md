@@ -82,7 +82,7 @@ python -m streamlit run app.py
 
 ### `cama/managers.py` — Use-case orchestration
 
-**`CheckpointManager`** — Implements UC-F1:
+**`CheckpointManager`** — Implements UC-F1 and UC-F2:
 - `add_checkpoint()` → **validate** → **persist** → **enqueue** `CHECKPOINT_CREATE` (`checkpoint.to_dto()`).
 - `edit_metadata()` → **update** → **revalidate** → **persist** → **enqueue** `CHECKPOINT_UPDATE`.
 - `delete_checkpoint()` → **delete** → **enqueue** `CHECKPOINT_DELETE`.
