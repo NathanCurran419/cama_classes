@@ -55,28 +55,28 @@ python -m streamlit run app.py
 ### `cama/services.py` — Persistence, queue, sync, helpers
 
 **`LocalStorageService`**
-- Wraps SQLite with `check_same_thread=False` (Streamlit-friendly).
+- Wraps SQLite with `check_same_thread=False`.
 - **Tables:** `stations`, `checkpoints`, `sessions`, `readings`, `offline_queue`.
 - **CRUD:** `save_checkpoint()`, `delete_checkpoint()`, `list_checkpoints()`, `save_session()`, `upsert_station()`, etc.
 - **Queue ops:** `enqueue()`, `take_batch()`, `purge()`.
 
 **`OfflineQueue`**
-- Composition over `QueuedItem`s; thin façade over storage queue methods.
+- Composition over `QueuedItem`s; over storage queue methods.
 
 **`SyncService`**
-- `flush(n=50)` moves a batch of queued items into `outbox.json` (simulated server), then purges them from the queue.
+- `flush(n=50)` moves a batch of queed items into `outbox.json` (simulated server), then purges them from the queue.
 
 **`SurveyDataRepository`**
-- Read-only helpers over stations (e.g., `nearest_station(x, y, z)`); **aggregation** (does not own station lifecycle).
+- Read-only helpers over stations (e.g., `nearest_station(x, y, z)`).
 
 **`InteractiveMapController`**
-- Given a click/point, returns nearest station via the repository.
+- Given a click/point, returns nearest station via the repository. Not implemented in UI.
 
 **`MeterConnectionManager`**
-- Generates realistic mock meter readings (swap in BLE/USB later).
+- Generates realistic mock meter readings (I do not have an actual meter currently).
 
 **`CrashRecoveryService`**
-- Placeholder for integrity checks (count pending items, etc.).
+- Placeholder for crash recovery checks.
 
 ---
 
