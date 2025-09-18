@@ -1,0 +1,116 @@
+[
+  {
+    "id": "df1b5ad6-6df8-439c-86cf-64e3f0bc7b07",
+    "kind": "CHECKPOINT_CREATE",
+    "payload": {
+      "id": "f17651fa-6020-4334-9d91-90f1cdfeea81",
+      "name": "First Water Crawl",
+      "passage_type": "CRAWL",
+      "survey_station_id": "B5",
+      "depth_from_entrance": 5.0,
+      "distance_from_station": 0.5,
+      "created_at": "2025-09-15T21:06:54.100686",
+      "updated_at": "2025-09-15T21:06:54.100686"
+    }
+  },
+  {
+    "id": "d2542604-1ff6-48e6-89f1-9e2f9a85a9bc",
+    "kind": "CHECKPOINT_UPDATE",
+    "payload": {
+      "id": "72402060-c61a-4694-b835-4bc74a64fbb4",
+      "name": "First Room",
+      "passage_type": "CANYON",
+      "survey_station_id": "A1",
+      "depth_from_entrance": 1.5,
+      "distance_from_station": 1.0,
+      "created_at": "2025-09-15T21:02:28.215600",
+      "updated_at": "2025-09-15T21:07:12.686516"
+    }
+  },
+  {
+    "id": "3f695a1e-79f6-40d9-bfe2-b20d8803bdbb",
+    "kind": "SESSION_UPLOAD",
+    "payload": {
+      "schema_version": 1,
+      "id": "09d18d2d-e1e4-48c3-a875-fc2b324c030b",
+      "anchor_station_id": "A1",
+      "started_at": "2025-09-15T21:07:46.145765",
+      "ended_at": null,
+      "readings": [
+        {
+          "captured_at": "2025-09-15T21:07:51.725523",
+          "o2_pct": 20.27,
+          "co_ppm": 9.2,
+          "h2s_ppm": 4.2,
+          "lel_pct": 3.6,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:07:52.284354",
+          "o2_pct": 19.41,
+          "co_ppm": 10.4,
+          "h2s_ppm": 2.3,
+          "lel_pct": 3.3,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:07:52.711718",
+          "o2_pct": 19.9,
+          "co_ppm": 14.0,
+          "h2s_ppm": 0.4,
+          "lel_pct": 2.9,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:07:53.444623",
+          "o2_pct": 18.79,
+          "co_ppm": 7.7,
+          "h2s_ppm": 2.5,
+          "lel_pct": 1.0,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:07:53.928028",
+          "o2_pct": 18.7,
+          "co_ppm": 5.5,
+          "h2s_ppm": 3.0,
+          "lel_pct": 1.2,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:07:56.771437",
+          "o2_pct": 19.57,
+          "co_ppm": 6.3,
+          "h2s_ppm": 2.7,
+          "lel_pct": 2.0,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:08:03.840643",
+          "o2_pct": 18.92,
+          "co_ppm": 4.6,
+          "h2s_ppm": 1.2,
+          "lel_pct": 4.6,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:08:05.493936",
+          "o2_pct": 18.78,
+          "co_ppm": 4.9,
+          "h2s_ppm": 4.1,
+          "lel_pct": 2.9,
+          "checkpoint_id": null
+        },
+        {
+          "captured_at": "2025-09-15T21:08:10.496400",
+          "o2_pct": 19.66,
+          "co_ppm": 11.9,
+          "h2s_ppm": 3.1,
+          "lel_pct": 3.3,
+          "checkpoint_id": null
+        }
+      ],
+      "reading_count": 9
+    }
+  }
+]
